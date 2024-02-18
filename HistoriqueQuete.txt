@@ -1,0 +1,25 @@
+💪 Challenge 1
+La page d'accueil de ton site 🏡
+
+Lors des étapes tu as créé la page d'index de tes séries.
+Mais qu’en est-il de ta page d'accueil ?
+
+    Crée un nouveau contrôleur DefaultController
+
+    Crée une méthode index() et une route en attribut nommée app_index qui devra répondre à une requête sur l'url / (la page par défaut de ton site finalement).
+
+    Elle devra afficher un titre <h1> contenant "Bienvenue !" grâce à un template Twig nommé index.html.twig à la racine. Pour rappel, n'étends pas base.html.twig pour le moment. De plus, ne pense pas au CSS, tu t’en chargeras lors d’une prochaine quête !
+
+Critères de validation
+
+    Il y a un fichier DefaultController.php dans src/Controller de l'arborescence.
+
+    Ce fichier comporte une classe DefaultController et étend le AbstractController de base de Symfony.
+
+    La route sur / est faite en attribut et est nommée app_index.
+
+    Le méthode index() du contrôleur se finit par un return $this->render('path_vers_un_twig');.
+
+    Le fichier Twig index.html.twig comprend un titre h1 "Bienvenue !".
+
+    L'URL http://localhost:8000/ est fonctionnelle et le titre s'affiche. 🙂
