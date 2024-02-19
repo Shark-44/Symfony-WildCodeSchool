@@ -1,0 +1,14 @@
+@import "~bootstrap/scss/bootstrap";
+$primary: #100f0e;
+$secondary: rgb(45 25 1);
+$color-third: rgb(200, 238, 86);
+body {
+    background-color: $primary;
+}
+.navbar{
+    background-color: $secondary;
+    .navbar-brand {
+        color:$color-third;
+        margin-left: 20px;
+    }
+}
