@@ -1,7 +1,8 @@
 @import "~bootstrap/scss/bootstrap";
-$primary: #100f0e;
-$secondary: rgb(45 25 1);
+$primary: #363331;
+$secondary: rgb(85, 50, 6);
 $color-third: rgb(200, 238, 86);
+
 body {
     background-color: $primary;
 }
@@ -9,6 +10,11 @@ body {
     background-color: $secondary;
     .navbar-brand {
         color:$color-third;
-        margin-left: 20px;
+        margin-left: 10px;
     }
 }
+h1 {
+    color:$color-third;
+    display: flex;
+    justify-content: center;
+ }
