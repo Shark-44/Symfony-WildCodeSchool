@@ -47,4 +47,31 @@ Symfony Encore est bien intégré dans le projet.
 
     Bootstrap est bien chargé dans tes pages (regarde les sources HTML et vérifie que tu n'as pas de 404 sur tes fichiers dans l'inspecteur > "Réseau").
     La navbar de Bootstrap s'affiche correctement sur tes pages
+----------------------------------------------------------------------------------------------------------------------------------------------------
+
+💪 Challenge 3
+Crée ta propre route
+
+Crée une route /program/{id}/ permettant de charger une vue affichant l'id du programme sous forme de titre, dans une balise <h1>.
+
+    Le paramètre id doit être un entier.
+        Si l'id n'est pas un entier, la route devra renvoyer une erreur 404 (utilise les requirements de paramètres).
+    La route devra être reliée à une méthode show du ProgramController.
+    La route ne devra être accessible qu'en GET.
+
+Critères de validation
+
+    La route est correctement définie, via un attribute, et est reliée à la méthode show() de ProgramController.
+    La classe ProgramController est annotée de manière à ce que toutes les routes de ce controller soient préfixées par /program/ et leur name préfixé par "program_".
+    Une vue templates/program/show.html.twig est créée.
+    Le résultat correspond aux attentes :
+        La route /program/4 affiche bien une vue avec en titre "Program 4" dans un <h1>.
+        La route /program/quatre n'affiche rien (erreur 404) car le paramètre n'est pas un entier.
+    La route n'est accessible qu'en GET. Tu peux tester qu'un POST sur ta route te retourne bien un 405 en exécutant la commande suivante dans ton terminal.
+
+curl -I -X POST "http://localhost:8000/program/4"
+
+Lien de téléchargement pour curl ou alors sudo apt install curl.
+
+    Ton code devra être poussé sur un repository GitHub
 
