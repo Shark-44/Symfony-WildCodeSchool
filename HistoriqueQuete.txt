@@ -1,4 +1,4 @@
-💪 Challenge 1
+💪 Challenge 1 Controller
 La page d'accueil de ton site 🏡
 
 Lors des étapes tu as créé la page d'index de tes séries.
@@ -25,7 +25,7 @@ Critères de validation
     L'URL http://localhost:8000/ est fonctionnelle et le titre s'affiche. 🙂
    -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-    💪 Challenge 2
+    💪 Challenge 2 Webpack Bootstrap
 
     C’est le moment de donner de la couleur et de la vie à ton Wild Series ! Grâce à Webpack et Bootstrap (on parle bien du Framework web ce coup-ci !).
 
@@ -49,7 +49,8 @@ Symfony Encore est bien intégré dans le projet.
     La navbar de Bootstrap s'affiche correctement sur tes pages
 ----------------------------------------------------------------------------------------------------------------------------------------------------
 
-💪 Challenge 3
+💪 Challenge 3 Routing
+
 Crée ta propre route
 
 Crée une route /program/{id}/ permettant de charger une vue affichant l'id du programme sous forme de titre, dans une balise <h1>.
@@ -74,9 +75,9 @@ curl -I -X POST "http://localhost:8000/program/4"
 Lien de téléchargement pour curl ou alors sudo apt install curl.
 
     Ton code devra être poussé sur un repository 
-    --------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------
 
-    💪 Challenge 4
+💪 Challenge 4 Doctrine
 Crée les entités Category et Program (sans liaison)
 
 Crée deux entités Category et Program.
@@ -96,6 +97,15 @@ Critères de validation
     Lance la commande doctrine:schema:validate, le résultat affiche bien OK pour le mapping ET la base de données.
     Ton code est disponible sur un repository GitHub
 ---------------------------------------------------------------------------------------------------------------------
+💪 Challenge 5 fixtures
+
+Pour ce challenge, tu devras simplement ajouter des catégories à l'aide des fixtures. Si tu as bien suivi cette quête, tout est déjà fait !
+🧐 Critères de validation
+
+    Lorsque php bin/console doctrine:fixtures:load est exécuté, il n y a pas de message d'erreur,
+    Les fixtures génèrent plusieurs catégories,
+    Les noms des catégories sont définis "à la main" dans la classe App\DataFixtures\CategoryFixtures,
+    Le code est disponible sur un repository GitHub, avec une branche correspondant à cette quête.
 
 
 
