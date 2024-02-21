@@ -73,5 +73,29 @@ curl -I -X POST "http://localhost:8000/program/4"
 
 Lien de téléchargement pour curl ou alors sudo apt install curl.
 
-    Ton code devra être poussé sur un repository GitHub
+    Ton code devra être poussé sur un repository 
+    --------------------------------------------------------------------------------------------------------------------------------------------
+
+    💪 Challenge 4
+Crée les entités Category et Program (sans liaison)
+
+Crée deux entités Category et Program.
+
+    Category
+        name : string (Obligatoire)
+    Program
+        title : string (Obligatoire)
+        synopsis : text (Obligatoire)
+        poster : string (Facultative)
+
+Pour le moment ces deux entités ne sont pas liées.
+Tu dois également mettre à jour ta base de données en conséquence.
+Critères de validation
+
+    Lance la commande doctrine:mapping:info, le résultat affiche bien les deux entités Category et Program.
+    Lance la commande doctrine:schema:validate, le résultat affiche bien OK pour le mapping ET la base de données.
+    Ton code est disponible sur un repository GitHub
+---------------------------------------------------------------------------------------------------------------------
+
+
 
