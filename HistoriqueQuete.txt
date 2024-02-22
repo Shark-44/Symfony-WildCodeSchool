@@ -1,4 +1,5 @@
 💪 Challenge 1 Controller
+
 La page d'accueil de ton site 🏡
 
 Lors des étapes tu as créé la page d'index de tes séries.
@@ -78,6 +79,7 @@ Lien de téléchargement pour curl ou alors sudo apt install curl.
 --------------------------------------------------------------------------------------------------------------------------------------------
 
 💪 Challenge 4 Doctrine
+
 Crée les entités Category et Program (sans liaison)
 
 Crée deux entités Category et Program.
@@ -106,6 +108,28 @@ Pour ce challenge, tu devras simplement ajouter des catégories à l'aide des fi
     Les fixtures génèrent plusieurs catégories,
     Les noms des catégories sont définis "à la main" dans la classe App\DataFixtures\CategoryFixtures,
     Le code est disponible sur un repository GitHub, avec une branche correspondant à cette quête.
+----------------------------------------------------------------------------------------------------------------------
+
+💪 Challenge 6 Relation avec Doctrine
+
+Crée la relation ManyToOne
+
+Ce challenge sera très simple, car tu as besoin des quêtes suivantes pour mettre en place des choses plus complexes. Il s'agira uniquement de contrôler visuellement le code de la classe Program. Cette dernière doit être conforme à ce qui est expliqué dans la quête. C’est-à-dire, une classe Program.php qui contient une propriété category paramétrée comme il se doit dans ses attributes avec les getter et setter associés.
+Critères de validation
+
+    La propriété category est présente et privée.
+
+    Le getter et setter correspondants sont présents et publics.
+
+    Les attributes ManyToOne et JoinColumn sont présentes et correctement paramétrées (nullable=false)
+
+    Le use nécessaire pour les attirbutes #[ORM] est en place.
+
+    Une (et une seule) classe de migration est présente, ajoutant une clé étrangère côté program.
+
+    Le code à jour est disponible sur un repository GitHub
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 
