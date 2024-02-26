@@ -17,7 +17,7 @@ class Program
     private ?string $title = null;
 
     #[ORM\Column(length: 255)]
-    private ?string $sysnopsis = null;
+    private ?string $synopsis = null;
 
     #[ORM\Column(length: 255, nullable: true)]
     private ?string $poster = null;
@@ -43,14 +43,14 @@ class Program
         return $this;
     }
 
-    public function getSysnopsis(): ?string
+    public function getSynopsis(): ?string
     {
-        return $this->sysnopsis;
+        return $this->synopsis;
     }
 
-    public function setSysnopsis(string $sysnopsis): static
+    public function setSynopsis(string $synopsis): static
     {
-        $this->sysnopsis = $sysnopsis;
+        $this->synopsis = $synopsis;
 
         return $this;
     }

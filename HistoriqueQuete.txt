@@ -131,5 +131,19 @@ Critères de validation
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+💪 Challenge 7 Les fixtures avancées avec jointures
+
+Alimente ton Wild Séries
+
+Maintenant que les fixtures n'ont plus de secret pour toi, profite de ce challenge pour insérer des fixtures pour toutes les données de ton application, à savoir :
+
+    Des catégories (au moins 5)
+    Des programmes (au moins 5)
+
+🧐 Critères de validation
+
+    Lorsque symfony console doctrine:fixtures:load est exécuté, il n y a pas de message d'erreur,
+    La navigation montre que toutes les données ont bien été insérées
+    Le code est disponible sur un repository GitHub, avec une branche correspondant à cette quête.
 
 
