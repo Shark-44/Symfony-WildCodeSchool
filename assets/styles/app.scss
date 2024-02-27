@@ -4,7 +4,14 @@ $secondary: rgb(85, 50, 6);
 $color-third: rgb(200, 238, 86);
 
 body {
+    margin-left: 10px;
     background-color: $primary;
+    h2 {
+        color: $color-third;
+    }
+    p {
+        color: white;
+    }
 }
 .navbar{
     background-color: $secondary;

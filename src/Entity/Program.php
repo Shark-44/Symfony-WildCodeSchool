@@ -6,6 +6,7 @@ use App\Repository\ProgramRepository;
 use Doctrine\ORM\Mapping as ORM;
 
 #[ORM\Entity(repositoryClass: ProgramRepository::class)]
+
 class Program
 {
     #[ORM\Id]
@@ -24,7 +25,7 @@ class Program
 
     #[ORM\ManyToOne]
     #[ORM\JoinColumn(nullable: false)]
-    private ?Category $Category = null;
+    private ?Category $category = null;
 
     public function getId(): ?int
     {
@@ -69,12 +70,12 @@ class Program
 
     public function getCategory(): ?Category
     {
-        return $this->Category;
+        return $this->category;
     }
 
-    public function setCategory(?Category $Category): static
+    public function setCategory(?Category $category): static
     {
-        $this->Category = $Category;
+        $this->category = $category;
 
         return $this;
     }
